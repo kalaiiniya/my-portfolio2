@@ -1,0 +1,95 @@
+/* Reset and general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    background-color: white;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #eeceee;
+    color:white;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+.projects {
+    padding: 40px 0;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+}
+
+.project {
+    background-color:white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.project p {
+    margin-bottom: 15px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
